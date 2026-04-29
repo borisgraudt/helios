@@ -128,8 +128,6 @@ asl-ai/
 │   ├── utils/              # Utilities
 │   │   ├── config.py       # Configuration
 │   │   └── logger.py       # Logging
-│   ├── quantum/            # Quantum computing (future)
-│   │   └── quantum_layer.py
 │   └── main.py             # Main entry point
 ├── scripts/                # Utility scripts
 │   ├── prepare.py          # Data preparation

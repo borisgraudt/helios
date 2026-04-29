@@ -82,7 +82,6 @@ def create_asl_model(
     num_classes: int = 26,
     batch_size: Optional[int] = None,
     learning_rate: float = 0.001,
-    use_quantum: bool = False,
     architecture: str = "mlp",
     moe_num_experts: int = 4,
     moe_expert_units: int = 128,
@@ -107,8 +106,6 @@ def create_asl_model(
         Batch size for model. If None, uses config default.
     learning_rate : float
         Learning rate for optimizer (default: 0.001)
-    use_quantum : bool
-        Whether to use quantum layer (future feature, currently ignored)
     architecture : str
         Either "mlp" (default) or "moe" (Mixture-of-Experts).
     moe_num_experts : int

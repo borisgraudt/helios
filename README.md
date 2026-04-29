@@ -14,7 +14,7 @@ Local ASL alphabet recognition (A-Z) from webcam. No cloud, no tracking, no data
 
 **Performance:** 97.2% test accuracy • <5ms latency • <5MB model size
 
-![Demo](docs/demo.gif)
+![Demo](assets/demo.gif)
 
 ---
 
