@@ -27,11 +27,6 @@ install: ## Install Python dependencies
 	$(PIP) install -r requirements.txt
 	@echo "Dependencies installed successfully!"
 
-install-quantum: ## Install optional quantum dependencies
-	@echo "Installing optional quantum dependencies..."
-	$(PIP) install -r requirements-quantum.txt
-	@echo "Quantum dependencies installed successfully!"
-
 run: ## Run the ASL recognition demo
 	@echo "Starting ASL recognition..."
 	$(PYTHON) main.py

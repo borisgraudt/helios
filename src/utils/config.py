@@ -103,13 +103,6 @@ class Config:
         "moe_top_k": int(os.getenv("ASL_AI_MOE_TOPK", "2")),
     }
     
-    # Quantum layer configuration (for future integration)
-    QUANTUM_CONFIG = {
-        "enabled": False,
-        "n_qubits": 4,
-        "device": "default.qubit",
-    }
-    
     @classmethod
     def ensure_directories(cls) -> None:
         """Create necessary directories if they don't exist."""

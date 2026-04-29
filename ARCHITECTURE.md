@@ -54,9 +54,6 @@ ASL&AI is a modular, production-ready real-time American Sign Language recogniti
 - **`config.py`**: Centralized configuration management
 - **`logger.py`**: Structured logging utilities
 
-### `/src/quantum/` - Quantum Computing (Future)
-- **`quantum_layer.py`**: Placeholder for hybrid quantum-classical integration
-
 ## Data Flow
 
 1. **Capture**: Camera captures video frames
@@ -88,11 +85,6 @@ ASL&AI is a modular, production-ready real-time American Sign Language recogniti
 - Optimized preprocessing with NumPy vectorization
 - Efficient model inference
 
-### Extensibility
-- Quantum layer stub for future integration
-- Plugin-friendly architecture
-- Easy to add new gesture classes
-
 ## Configuration
 
 All configuration is centralized in `src/utils/config.py`:
@@ -118,7 +110,7 @@ make test
 
 ## Future Enhancements
 
-1. **Quantum Integration**: Hybrid quantum-classical models
+1. **Fairness Audit**: Measure accuracy disparity across skin tones, lighting, and hand morphology; targeted fixes upstream of the classifier.
 2. **Mobile Deployment**: TensorFlow Lite optimization
 3. **Sentence Recognition**: Context-aware grammar
 4. **Multi-language**: International sign languages

@@ -9,7 +9,7 @@
 
 ## Abstract
 
-This report presents ASL&AI, a real-time American Sign Language (ASL) recognition system that achieves 97.2% accuracy on alphabet sign classification. The system combines computer vision techniques (MediaPipe) with deep learning (TensorFlow/Keras) to provide privacy-preserving, edge-deployable gesture recognition. Our approach uses position-invariant preprocessing of hand landmarks, enabling robust recognition across different hand orientations and camera positions. The system processes gestures in real-time with <5ms inference latency, making it suitable for practical applications. We evaluate the system on a dataset of 10,508 samples across 26 ASL alphabet classes, demonstrating high accuracy and low computational overhead. The modular architecture supports future enhancements including quantum machine learning integration and sentence-level translation. This work contributes to accessibility technology by providing an open-source, locally-processed solution for ASL-to-text translation.
+This report presents ASL&AI, a real-time American Sign Language (ASL) recognition system that achieves 97.2% accuracy on alphabet sign classification. The system combines computer vision techniques (MediaPipe) with deep learning (TensorFlow/Keras) to provide privacy-preserving, edge-deployable gesture recognition. Our approach uses position-invariant preprocessing of hand landmarks, enabling robust recognition across different hand orientations and camera positions. The system processes gestures in real-time with <5ms inference latency, making it suitable for practical applications. We evaluate the system on a dataset of 10,508 samples across 26 ASL alphabet classes, demonstrating high accuracy and low computational overhead. The modular architecture supports future enhancements including a fairness audit across skin tones and lighting conditions, and sentence-level translation. This work contributes to accessibility technology by providing an open-source, locally-processed solution for ASL-to-text translation.
 
 **Keywords:** Sign Language Recognition, Computer Vision, Deep Learning, Accessibility, Real-time Systems, Edge AI
 
@@ -34,7 +34,7 @@ We aim to develop a real-time ASL recognition system that:
 2. Processes gestures in real-time (<10ms latency)
 3. Operates entirely locally without cloud dependencies
 4. Runs on standard hardware without specialized sensors
-5. Provides a foundation for future enhancements (sentence-level translation, quantum ML)
+5. Provides a foundation for future enhancements (sentence-level translation, fairness audit)
 
 ### 1.3 Contributions
 
@@ -402,7 +402,7 @@ Analysis of misclassifications (58 out of 2,102) reveals:
 4. **Mobile Deployment:** Optimize for iOS/Android using TensorFlow Lite
 
 **Medium-term:**
-1. **Quantum ML Integration:** Explore hybrid quantum-classical models for optimization
+1. **Fairness Audit:** Measure accuracy disparity across skin tones (Fitzpatrick scale), lighting conditions, and hand morphology; diagnose whether gaps originate at the keypoint detector or the classifier; propose targeted mitigations.
 2. **Multi-Language Support:** Extend to other sign languages (BSL, LSF, etc.)
 3. **Voice Output:** Add text-to-speech for complete ASL-to-speech translation
 4. **Web Integration:** Browser-based deployment using TensorFlow.js
@@ -441,7 +441,7 @@ We present ASL&AI, a real-time ASL recognition system achieving 97.2% accuracy w
 3. **Privacy-preserving design** with complete local processing
 4. **Production-ready implementation** with modular architecture
 
-The system demonstrates that high-accuracy sign language recognition is achievable with standard hardware and local processing, addressing both performance and privacy concerns. Future work will extend to sentence-level recognition and explore quantum ML integration for further optimization.
+The system demonstrates that high-accuracy sign language recognition is achievable with standard hardware and local processing, addressing both performance and privacy concerns. Future work will extend to sentence-level recognition and conduct a fairness audit across skin tones and lighting conditions.
 
 This work contributes to accessibility technology by providing an open-source, practical solution for ASL-to-text translation, with potential applications in education, communication, and assistive technology.
 
@@ -465,7 +465,7 @@ This work contributes to accessibility technology by providing an open-source, p
 
 [8] Baevski, A., Zhou, Y., Mohamed, A., & Auli, M. (2020). wav2vec 2.0: A framework for self-supervised learning of speech representations. *Advances in Neural Information Processing Systems*, 33.
 
-[9] Preskill, J. (2018). Quantum Computing in the NISQ era and beyond. *Quantum*, 2, 79.
+[9] Buolamwini, J., & Gebru, T. (2018). Gender Shades: Intersectional Accuracy Disparities in Commercial Gender Classification. *Proceedings of Machine Learning Research*, 81, 1-15.
 
 [10] World Federation of the Deaf. (2024). *Sign Language Statistics*. https://wfdeaf.org/
 
