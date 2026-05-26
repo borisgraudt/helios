@@ -81,8 +81,8 @@ Webcam → MediaPipe → Preprocessing → Neural Net → Text
                                      (256→128→64)
 ```
 
-**Input:** 63D hand landmarks (21 points × xyz)  
-**Hidden:** Dense layers with Dropout + BatchNorm  
+**Input:** 63D hand landmarks (21 points × xyz)
+**Hidden:** Dense layers with Dropout + BatchNorm
 **Output:** 26-class softmax (A-Z)
 
 ---
@@ -107,7 +107,7 @@ TensorFlow • MediaPipe • OpenCV • NumPy • scikit-learn
 ## Documentation
 
 - **[Technical Report](docs/TECHNICAL_REPORT.md)** — Methodology & experiments
-- **[Model Card](MODEL_CARD.md)** — Model details & limitations  
+- **[Model Card](MODEL_CARD.md)** — Model details & limitations
 - **[Contributing](CONTRIBUTING.md)** — Development workflow
 - **[Architecture](ARCHITECTURE.md)** — System design
 
